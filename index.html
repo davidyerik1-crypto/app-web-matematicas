@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="iconos/icoIndex.ico" type="image/x-icon">
 </head>
 <body>
+    <script>
+        alert("¡Holaa!, Bienvenido a mi aplicacion Web! :)")
+        let nombre = prompt("ingresa tu nombre, please: ","su nombre:");
+    </script>
     <header>
         <nav>
          <ul class="navbar">
@@ -19,7 +23,13 @@
          </ul>
         </nav>
     </header>
+    <main>
     <h1>Las Matemáticas</h1>
+    <h2 class="Bienvenida">
+        <script>
+            document.write("¡Bienvenido/a: " + nombre);
+        </script>
+    </h2>
     <h2>Geometria analítica</h2>
     <div style="text-align: center;">
         <img src="Imagenes/dont you know.jpg" alt="img1"  width="1000" height="400">
@@ -29,41 +39,45 @@
         <h2>Inicio</h2>
         <h3>Introducción:</h3>
         <p>rama de las matemáticas que estudia las figuras geométricas, sus propiedades (como áreas, distancias, ángulos y volúmenes) <br>
-        y los lugares geométricos mediante el uso de expresiones algebraicas y un sistema de coordenadas. <br><br>
-            <h3>Características Principales:</h3>
-            <ul class="ulInicio">
-                <li>Sistema de coordenadas: Utiliza principalmente el plano cartesiano, el cual se divide en dos ejes perpendiculares (x),(y) y cuatro cuadrantes.</li>
-                <li>Relación álgebra-geometría: Convierte los problemas geométricos en ecuaciones y, a la inversa, representa las ecuaciones algebraicas como gráficas o figuras geométricas.</li>
-                <li>Origen histórico: Fue desarrollada en el siglo XVII por los matemáticos franceses René Descartes y Pierre de Fermat</li>
-            </ul><br>
-            <div class="imagenes">
-            <img src="Imagenes/planooo.jpg" alt="plano cartesiano" width="300" height="300">
-            <img src="Imagenes/geoooooo.jpg" alt="Geometria" width="300" height="300">
-            <img src="Imagenes/frieeee.jpg" alt="Pierre de Fermat" width="300" height="300">
+        y los lugares geométricos mediante el uso de expresiones algebraicas y un sistema de coordenadas. </p><br><br>
+        <h3>Características Principales:</h3>
+        <div class="ordenado">
+            <div class="lista">
+                <div class="elemento"><p>1.- Sistema de coordenadas: Utiliza principalmente el plano cartesiano, el cual se divide en dos ejes perpendiculares (x),(y) y cuatro cuadrantes.</p></div>
+                <div class="elemento"><p>2.- Relación álgebra-geometría: Convierte los problemas geométricos en ecuaciones y, a la inversa, representa las ecuaciones algebraicas como gráficas o figuras geométricas.</p></div>
+                <div class="elemento"><p>3.- Origen histórico: Fue desarrollada en el siglo XVII por los matemáticos franceses René Descartes y Pierre de Fermat.</p></div>
             </div>
-        </p>
+            <div class="lista">
+                <div class="elemento"><img src="Imagenes/planooo.jpg" alt="plano cartesiano" width="150" height="150"></div>
+                <div class="elemento"><img src="Imagenes/geoooooo.jpg" alt="Geometria" width="150" height="150"></div>
+                <div class="elemento"><img src="Imagenes/frieeee.jpg" alt="Pierre de Fermat" width="150" height="150"></div>
+            </div>
+        </div>
+        <div class="video">
+            <video width="700" height="530" muted loop autoplay controls>
+                <source src="Videos/geoAna.mp4" type="video/mp4">
+        </video>
+        </div>
     </div>
     </section>
 
     <section id="plano_cartesiano">
         <div class="cuadroText">
             <h2>Plano Cartesiano</h2>
-            <p>Un plano cartesiano es un sistema de referencias formado por dos rectas numéricas perpendiculares que se cruzan en un punto llamado origen
+            <p>Un plano cartesiano es un sistema de referencias formado por dos rectas numéricas perpendiculares que se cruzan en un punto llamado origen</p>
                 <div class="imagenes">
                     <img src="Imagenes/plano_cartesiano.png" alt="plano cartesiano" width="300" height="300">
                 </div>
-            </p>
         </div>
     </section>
     
     <section id="plano polar">
         <div class="cuadroText">
             <h2>Plano Polar</h2>
-            <p>Un plano polar es un sistema de referencia formado por dos rectas numéricas perpendicualres que se cruzan en un punto llamado origen
-                <div class="imagenes">
-                    <img src="Imagenes/plano_polar.jpg" alt="plano polar" width="300" height="300">
-                </div>
-            </p>
+            <p>Un plano polar es un sistema de referencia formado por dos rectas numéricas perpendicualres que se cruzan en un punto llamado origen</p>
+            <div class="imagenes">
+                <img src="Imagenes/plano_polar.jpg" alt="plano polar" width="300" height="300">
+            </div>
         </div>
     </section>
     
@@ -71,13 +85,11 @@
         <div class="cuadroText">
             <h2>Formulas y Ecuaciones</h2>
             <h3>Para Calcular figuras, rectas, parábolas, etc...</h3>
-            <p>
-                <div class="imagenes">
-                    <img src="Imagenes/ecu_recta.png" alt="la recta" width="300" height="300">
-                    <img src="Imagenes/ecu_circu.jpg" alt="la circunferencia" width="300" height="300">
-                    <img src="Imagenes/ecu_para.jpg" alt="la parábola" width="300" height="300">
-                </div>
-            </p>
+            <div class="imagenes">
+                <img src="Imagenes/ecu_recta.png" alt="la recta" width="300" height="300">
+                <img src="Imagenes/ecu_circu.jpg" alt="la circunferencia" width="300" height="300">
+                <img src="Imagenes/ecu_para.jpg" alt="la parábola" width="300" height="300">
+            </div>
             <table border="2">
                 <tr>
                     <th></th>
@@ -104,26 +116,41 @@
 
 
     <br><br><br><br><br>
-    <h3>¿Qué tanto sabes del tema? Compruebalo aquí </h3>
-    <a href="diagnostico.html">Examen Diagnóstico</a>
+    <div class="quizSection">
+        <h3>¿Qué tanto sabes del tema? Compruebalo aquí </h3>
+        <div class="acomodo">
+            <img src="Imagenes/flecha1 (1).png" alt="flecha" width="50px" height="50px">
+            <button class="quiz"><a href="diagnostico.html">Examen Diagnóstico</a></button>
+            <img src="Imagenes/flecha2.png" alt="flecha" width="50px" height="50px">
+        </div>
+    </div>
     <br><br><b><br><br>
-    <p>escucha algo de música para concentrarte!!! </p>
-    <audio muted loop controls>
+
+    <div class="musicSection">
+        <p>escucha algo de música para concentrarte!!! </p>
+        <audio muted loop controls>
         <source src="Audios/deathwish.mpeg" type="audio/mpeg">
-    </audio>
+        </audio>
+        <audio muted loop controls>
+        <source src="Audios/another_Relapse.mpeg" type="audio/mpeg">
+        </audio>
+    </div>
+    </main>
 
     
 
     <footer>
-        <section id="quiz">
+        <section>
             <div class="footer">
                 <p>Página hecha por: Yerik DAVID O.G. del 5°AMP</p>
                 <img src="Imagenes/IMG20241129184013.jpg" alt="YO" width="40" height="70">
             </div>
-            <br><br><br>
             <p>Fuentes:</p>
             <a href="https://www.profesorenlinea.cl/geometria/Recta_Ecuacion_de.html">Profesor en línea.cl</a>
         </section>
     </footer>
+
+
+
 </body>
 </html>
