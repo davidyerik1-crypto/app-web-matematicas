@@ -1,20 +1,33 @@
 
 body{
-    background: #101042;
+    background: linear-gradient(#101042, rgb(44, 44, 231));
+    padding: 0;
 }
 html {
     scroll-behavior: smooth;
+}
+html, body {
+  margin: 0;
+}
+main{
+    flex: 1;
 }
 h1{
     text-align:center;
     text-decoration: wavy;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 5ch;
+    font-size: 10ch;
     color:rgb(247, 232, 232);
 }
 h2{
     text-align: center;
     color: rgb(198, 110, 233);
+    font-size: 6ch;
+}
+.Bienvenida{
+    text-align: center;
+    color: rgb(117, 64, 253);
+    font-size: 7ch;
 }
 h3{
     color: white;
@@ -76,6 +89,25 @@ ul li a:hover {
   background-color: #111111;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header {
     display: flex;
     justify-content: center;
@@ -90,11 +122,10 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 900px;
     padding: 12px 28px;
     background: rgba(30, 41, 59, 0.7);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 50px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
 }
@@ -105,14 +136,20 @@ header {
     gap: 20px;
 }
 
-.nav-links a {
+.nav-links {
     text-decoration: none;
     color: #94a3b8;
     font-weight: 500;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
+    transition: 0.4s;
     padding: 8px 16px;
     border-radius: 20px;
+    
+}
+
+.nav-links:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
 }
 
 .btn-action:hover {
@@ -120,56 +157,179 @@ header {
   box-shadow: 0 6px 20px 0 rgba(56, 189, 248, 0.55);
 }
 
+.video{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cuadroText{
-    background-color: #7b9be0;
-    border: 2px solid #333333;
+    background-color: rgb(102, 79, 233);
     border-radius: 8px;
     padding: 20px;      
-    max-width: 3000px;
     margin: 20px auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .cuadroText h2{
-    color: #101042;
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
 
 .cuadroText h3{
-    color: #101042;
+    color: #29045f;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .cuadroText p{
-    color: #101042;
+    background-color: #2d2d83;
+    color: #e3e3ec;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
-.imagenes{
+
+
+
+
+
+
+
+
+
+
+.quizSection{
+    background-color: #2d2d83;
+    border-radius: 30px;
+    padding: 40px;
+    font-size: larger;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 90px;
     text-align: center;
-    margin-top: 20px;
+    justify-content: center;
+}
+.quizSection a{
+    text-decoration: none;
+}
+.quizSection button{
+    color: #101042;
+    font-size: 3ch;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: azure;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.4s;
+    transform: scale(0.8);
+}
+.quizSection button:hover{
+    color: azure;
+    background-color: #101042;
+    border-radius: 30px;
+    transition: 0.4s;
+    transform: translateY(-5px);
 }
 
-.ulInicio{
+
+
+
+
+
+
+
+
+.musicSection{
+    background-color: #2d2d83;
+    border-radius: 30px;
+    padding: 40px;
+    font-size: larger;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 90px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+.ordenado{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.imagenes{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    gap: 40px;
+}
+
+.lista{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     list-style:circle;
 }
 
-.ulInicio li{
+.lista li{
     background-color: #7b9be0;
     text-align: left;
     color: #101042;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
     outline: none;
+    margin-top: 40px;
+    width: 50%;
 }
 
-.footer{
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
     display: flex;
-    background:block;
-    padding: 10px;
+    padding: 20px;
     background-color: #1f191d;
     justify-content: left;
     flex-wrap: wrap;
