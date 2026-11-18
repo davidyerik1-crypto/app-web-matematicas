@@ -8,21 +8,26 @@ html {
 html, body {
   margin: 0;
 }
+
 main{
+    max-width: 1100px;
     flex: 1;
 }
-h1{
+
+   h1{
     text-align:center;
     text-decoration: wavy;
     font-family: 'Times New Roman', Times, serif;
     font-size: 10ch;
     color:rgb(247, 232, 232);
-}
-h2{
+    }
+    h2{
     text-align: center;
     color: rgb(198, 110, 233);
     font-size: 6ch;
-}
+    }    
+
+
 .Bienvenida{
     text-align: center;
     color: rgb(117, 64, 253);
@@ -58,7 +63,7 @@ table{
 table tr td p{
     color: antiquewhite;
     margin-top: 10px;
-    margin-bottom: 10x;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -335,3 +340,98 @@ footer{
     margin-top: 70px;
 }
 
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    main {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 5ch;
+    }
+
+    h2 {
+        font-size: 4ch;
+    }
+
+    .Bienvenida {
+        font-size: 4ch;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cuadroText, .quizSection, .musicSection {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 20px;
+    }
+    .ordenado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista li {
+        width: 100%;
+        margin-top: 10px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 7ch;
+    }
+
+    h2 {
+        font-size: 5ch;
+    }
+
+    .Bienvenida {
+        font-size: 5.5ch;
+    }
+
+    .lista li {
+        width: 80%;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        margin: 0 auto;
+    }
+}
